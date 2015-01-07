@@ -1,32 +1,45 @@
 <script>
-
 var guess, 
 	message;
+
+//Got loop to run, added alert messages, still struggling on getting loop to recognize changing guess variable.//
+
 guess = prompt ("Guess how I got to school today?");
 
 switch (guess){
-	case "walked":
-	message = "I did walk today, you got it on your first try!"
-	break;
+		
+		case "walked":
+		alert(message) = "I did walk today, you got it on your first try!"
+		guess = prompt ("Guess how I got to school today?");
+		break;
 
-	case "drove":
-	message = "I did not arrive on 4 wheels today, try again."
-	break;
+		case "drove":
+		message = "I did not arrive on 4 wheels today, try again.";
+		alert(message);
+		guess = prompt ("Guess how I got to school today?");
+		break;
 
-	case "bused":
-	message = "I alomost took the bus but changed my mind, try again."
-	break;
+		case "bused":
+		message = "I almost took the bus but changed my mind, try again.";
+		alert(message);
+		guess = prompt ("Guess how I got to school today?");
+		break;
 
-	case "biked":
-	message = "My bike has no brakes right now, try again."
-	break;
+		case "biked":
+		message = "My bike has no brakes right now, try again.";
+		alert(message);
+		guess = prompt ("Guess how I got to school today?");
+		break;
 
-	case "ran":
-	message = "I get too sweaty if I run, try again."
-	break;
+		case "ran":
+		message = "I get too sweaty if I run, try again.";
+		alert(message);
+		guess = prompt ("Guess how I got to school today?");
 
-	default: message = "I've never used this mode of transportation, try again.";
-};
+	default: message ="I've never used this mode of transportation, try again.";
+		break;
+	};
+
 	alert(message);
 
 </script>
